@@ -156,4 +156,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.add_recipe "init::nginx"
     chef.add_recipe "init::docker"
   end
+
+  # ServerSpec
+  config.vm.provision :serverspec do |spec|
+    spec.pattern = './spec/*_spec.rb'
+  end
 end

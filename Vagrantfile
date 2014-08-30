@@ -154,5 +154,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.add_recipe "init::swap"
     chef.add_recipe "init::devenv"
     chef.add_recipe "init::nginx"
+    chef.add_recipe "init::docker"
   end
 end

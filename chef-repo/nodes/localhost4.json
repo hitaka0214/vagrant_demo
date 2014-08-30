@@ -1,0 +1,9 @@
+{
+  "run_list": [
+    "recipe[init::swap]",
+    "recipe[init::debenv]" 
+  ],
+  "automatic": {
+    "ipaddress": "localhost4"
+  }
+}

@@ -148,4 +148,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Chef
   config.omnibus.chef_version = :latest
+  config.vm.provision "chef_solo" do |chef|
+    chef.custom_config_path = "Vagrantfile.chef"
+    chef.cookbooks_path = "./chef-repo/site-cookbooks"
+    chef.add_recipe "init::swap"
+    chef.add_recipe "init::devenv"
+    chef.add_recipe "init::nginx"
+  end
 end

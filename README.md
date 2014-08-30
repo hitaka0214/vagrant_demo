@@ -11,29 +11,35 @@ VirtualBox 4.3.14
 Vagrant 1.6.3  
 
 # 利用手順
-1. 任意のディレクトリ上でgit repositoryをcloneする。
+1. (初回のみ)vagrantのプラグインをインストールする。
+```
+vagrant plugin install vagrant-omnibus
+vagrant plugin install vagrant-serverspec
+```
+
+2. (初回のみ)任意のディレクトリ上でgit repositoryをcloneする。
 ```
 git clone https://github.com/hitaka0214/vagrant_demo.git
 ```
 
-2. vagrantを作成・起動する。
+3. vagrantを作成・起動する。
 ```
 cd vagrant_demo
 vagrant up
 ```
 
-3. 構築した仮想マシンへログインする。
+4. 構築した仮想マシンへログインする。
 ```
 vagrant ssh
 ```
 exitすればサーバからログアウト可能。
 
-4. 仮想マシンを停止する場合
+5. 仮想マシンを停止する場合
 ```
 vagrant halt
 ```
 
-5. 仮想マシンを削除する場合
+6. 仮想マシンを削除する場合
 ```
 vagrant destroy
 ```

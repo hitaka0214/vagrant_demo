@@ -27,6 +27,8 @@ git clone https://github.com/hitaka0214/vagrant_demo.git
 cd vagrant_demo
 vagrant up
 ```
+Chef+ServerSpecの起動はVagrantfileへ記載済み。  
+vagrant upをすると，サーバ起動の後，Chefの実行，ServerSpecの実行が順次行われる。
 
 ## 構築した仮想マシンへログインする。
 ```

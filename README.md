@@ -44,4 +44,30 @@ vagrant halt
 vagrant destroy
 ```
 
+# Chefコード説明
+## init::swap
+swapファイルを作成する。
+
+## init::devenv
+* vimのインストールと設定ファイルの設置。
+* screenのインストールと設定ファイルの設置。
+* emacsのインストールと設定ファイルの設置。
+
+## init::nginx
+* nginxのリポジトリをインストール。
+* nginxをインストール。
+* nginxのサービスを起動。また，自動起動設定。
+* firewalld（旧iptables）の停止。（port 80の通信を止められているため）
+
+## init::docker
+* dockerをインストール。
+* dockerのサービスを起動。また，自動起動設定。
+* Dockerfileをレシピからコピー。
+
+## dev::projectx
+* projectxディレクトリを作成し，このgitリポジトリをclone。
+* nginx用の設定ファイルをレシピからコピー。
+* /home/vagrantのパーミッションを変更。  
+http://192.168.50.10/thecodes/へアクセス可能になる。
+
 

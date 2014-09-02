@@ -1,4 +1,4 @@
-init Cookbook
+dev Cookbook
 =============
 TODO: Enter the cookbook description here.
 
@@ -11,14 +11,14 @@ TODO: List your cookbook requirements. Be sure to include any requirements this 
 
 e.g.
 #### packages
-- `toaster` - init needs toaster to brown your bagel.
+- `toaster` - dev needs toaster to brown your bagel.
 
 Attributes
 ----------
 TODO: List your cookbook attributes here.
 
 e.g.
-#### init::default
+#### dev::default
 <table>
   <tr>
     <th>Key</th>
@@ -27,7 +27,7 @@ e.g.
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['init']['bacon']</tt></td>
+    <td><tt>['dev']['bacon']</tt></td>
     <td>Boolean</td>
     <td>whether to include bacon</td>
     <td><tt>true</tt></td>
@@ -36,17 +36,17 @@ e.g.
 
 Usage
 -----
-#### init::default
+#### dev::default
 TODO: Write usage instructions for each cookbook.
 
 e.g.
-Just include `init` in your node's `run_list`:
+Just include `dev` in your node's `run_list`:
 
 ```json
 {
   "name":"my_node",
   "run_list": [
-    "recipe[init]"
+    "recipe[dev]"
   ]
 }
 ```

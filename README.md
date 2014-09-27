@@ -2,6 +2,7 @@ vagrant demo
 ============
 
 # 概要
+社内勉強会用の資料。  
 Vagrant+Chefを使ってCentOS 7の仮想マシンを構築します。  
 また，ServerSpecを使って，構築後のサーバのテストを行います。
 
